@@ -31,6 +31,32 @@ public class PictureTester
     beach.negate();
     beach.explore();
   }
+
+  public static void testMirrorVerticalRightToLeft(){
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.MirrorVerticalRightToLeft();
+    redMotorcycle.explore();
+    }
+
+  public static void testMirrorHorizontal(){
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorHorizontal();
+    redMotorcycle.explore();
+    }
+  public static void testMirrorDiagonal(){
+    Picture redMotorcycle = new Picture("beach.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorDiagonal();
+    redMotorcycle.explore();
+    }
+  public static void testMirrorHorizontalBotToTop(){
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorHorizontalBotToTop();
+    redMotorcycle.explore();
+    }
   public static void testGrayscale()
   {
     Picture beach = new Picture("beach.jpg");
@@ -96,9 +122,13 @@ public class PictureTester
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
-    testFixUnderwater();
+    //testFixUnderwater();
     //testMirrorVertical();
     //testMirrorTemple();
+    //testMirrorVerticalRightToLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
+    testMirrorDiagonal();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
